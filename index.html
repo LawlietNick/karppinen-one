@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Niko Karppinen | Analytiikka & Data-asiantuntija</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --background: #1a1a1a;
+      --text: #e0e0e0;
+      --primary: #8ab4f8;
+      --hover: #6a9de9;
+      --card-bg: #2d2d2d;
+      --border: #444444;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: var(--background);
+      font-family: 'Inter', sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      max-width: 750px;
+      margin: 5rem auto;
+      padding: 2.5rem 3rem;
+      background: var(--card-bg);
+      border-radius: 14px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1), 0 10px 20px rgba(0,0,0,0.15);
+      border: 1px solid var(--border);
+      animation: fadeIn 1.2s ease-out;
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      color: #ffffff;
+      animation: slideUp 1s ease-out;
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    p {
+      margin-bottom: 1.2rem;
+      font-size: 1.05rem;
+      animation: fadeIn 1.6s ease-out;
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-top: 2.5rem;
+      animation: fadeIn 2s ease-out;
+    }
+
+    .links a {
+      padding: 0.8rem 1.4rem;
+      background: var(--primary);
+      color: var(--background);
+      text-decoration: none;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      transition: background 0.25s ease-in-out, transform 0.1s ease-out;
+    }
+
+    .links a:hover {
+      background: var(--hover);
+      transform: translateY(-2px);
+    }
+
+    .links a:active {
+      transform: translateY(0);
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        margin: 3rem 1.5rem;
+        padding: 2rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+      }
+      p {
+        font-size: 1rem;
+      }
+      .links a {
+        padding: 0.7rem 1.2rem;
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        margin: 1.5rem 1rem;
+        padding: 1.5rem;
+      }
+      h1 {
+        font-size: 1.8rem;
+      }
+      .links {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Niko Karppinen</h1>
+    <p>
+      Autan yrityksiä saamaan enemmän irti verkkopalveluidensa datasta. Työskentelen analytiikan ja datalähtöisen kehityksen parissa, ja tehtäväni on varmistaa, että dataa hyödynnetään tehokkaasti aina mittaristojen suunnittelusta jatkuvaan kehitykseen.
+    </p>
+    <p>
+     Ydinosaamistani ovat verkkosivujen analytiikka, hakukoneoptimointi ja evästeitä kunnioittava mittaaminen. Jaan mielelläni osaamistani myös koulutuksissa, webinaareissa ja podcasteissa, erityisesti analytiikan merkityksestä liiketoiminnan kehityksessä.
+    </p>
+    <div class="links">
+      <a href="https://www.linkedin.com/in/karppinenniko" target="_blank" rel="noreferrer">LinkedIn</a>
+      <a href="https://bsky.app/profile/lawlietnick.bsky.social" target="_blank" rel="noreferrer">Bluesky</a>
+    </div>
+  </div>
+</body>
+</html>
