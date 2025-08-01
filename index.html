@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Niko Karppinen | Analytiikka & Data-asiantuntija</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon"> <style>
     :root {
       --background: #1a1a1a;
       --text: #e0e0e0;
@@ -13,6 +13,7 @@
       --hover: #6a9de9;
       --card-bg: #2d2d2d;
       --border: #444444;
+      --link-text-color: #1a1a1a; /* Adjusted for contrast on primary background */
     }
 
     body {
@@ -67,10 +68,36 @@
       }
     }
 
+    h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      margin-top: 2.5rem;
+      margin-bottom: 1rem;
+      color: var(--primary); /* Using primary color for subheadings */
+    }
+
     p {
       margin-bottom: 1.2rem;
       font-size: 1.05rem;
       animation: fadeIn 1.6s ease-out;
+    }
+
+    .skills-list {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .skills-list li {
+      background: var(--border);
+      color: var(--text);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
     }
 
     .links {
@@ -84,7 +111,7 @@
     .links a {
       padding: 0.8rem 1.4rem;
       background: var(--primary);
-      color: var(--background);
+      color: var(--link-text-color); /* Ensure good contrast */
       text-decoration: none;
       border-radius: 10px;
       font-size: 1rem;
@@ -99,6 +126,34 @@
 
     .links a:active {
       transform: translateY(0);
+    }
+
+    .contact-button {
+      background: none;
+      border: 2px solid var(--primary);
+      color: var(--primary);
+      padding: 0.8rem 1.4rem;
+      border-radius: 10px;
+      font-size: 1rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.25s ease-in-out, color 0.25s ease-in-out, transform 0.1s ease-out;
+    }
+
+    .contact-button:hover {
+      background: var(--primary);
+      color: var(--background);
+      transform: translateY(-2px);
+    }
+
+    .spotify-embeds {
+      margin-top: 2.5rem;
+    }
+
+    .spotify-embeds iframe {
+      border-radius: 12px;
+      margin-bottom: 1rem; /* Space between iframes */
+      max-width: 100%; /* Ensure responsiveness for the second iframe */
     }
 
     @media (max-width: 768px) {
@@ -129,6 +184,10 @@
       .links {
         flex-direction: column;
       }
+      .links a, .contact-button {
+        width: 100%; /* Make buttons full width on small screens */
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -136,14 +195,50 @@
   <div class="container">
     <h1>Niko Karppinen</h1>
     <p>
-      Autan yrityksiä saamaan enemmän irti verkkopalveluidensa datasta. Työskentelen analytiikan ja datalähtöisen kehityksen parissa, ja tehtäväni on varmistaa, että dataa hyödynnetään tehokkaasti aina mittaristojen suunnittelusta jatkuvaan kehitykseen.
+      Autan yrityksiä muuttamaan datan konkreettiseksi kasvuksi. Työskentelen **analytiikan ja datalähtöisen kehityksen** parissa, ja tehtäväni on varmistaa, että dataa hyödynnetään tehokkaasti aina mittaristojen suunnittelusta jatkuvaan kehitykseen.
     </p>
     <p>
-     Ydinosaamistani ovat verkkosivujen analytiikka, hakukoneoptimointi ja evästeitä kunnioittava mittaaminen. Jaan mielelläni osaamistani myös koulutuksissa, webinaareissa ja podcasteissa, erityisesti analytiikan merkityksestä liiketoiminnan kehityksessä.
+      Ydinosaamistani ovat verkkosivujen analytiikka, hakukoneoptimointi ja evästeitä kunnioittava mittaaminen. Jaan mielelläni osaamistani myös koulutuksissa, webinaareissa ja podcasteissa, erityisesti analytiikan merkityksestä liiketoiminnan kehityksessä.
     </p>
+
+    ---
+
+    <h2>Osaamisalueet</h2>
+    <ul class="skills-list">
+      <li>Web-analytiikka</li>
+      <li>Hakukoneoptimointi (SEO)</li>
+      <li>Datalähtöinen kehitys</li>
+      <li>Mittaristojen suunnittelu ja asentanta</li>
+      <li>Server-side Tracking</li>
+      <li>Evästeiden hallinta</li>
+      <li>Koulutus & Konsultointi</li>
+    </ul>
+
+    ---
+
+    <h2>Työkalut & Teknologiat</h2>
+    <ul class="skills-list">
+      <li>Google Analytics 4 (GA4)</li>
+      <li>Piwik Pro</li>
+      <li>Matomo</li>
+      <li>Plausible Analytics</li>
+      <li>Google Search Console</li>
+      <li>Google Tag Manager (GTM)</li>
+    </ul>
+
+    ---
+
     <div class="links">
-      <a href="https://www.linkedin.com/in/karppinenniko/" target="_blank" rel="noreferrer">LinkedIn</a>
-      <a href="https://bsky.app/profile/lawlietnick.bsky.social" target="_blank" rel="noreferrer">Bluesky</a>
+      <a href="https://www.linkedin.com/in/karppinenniko/" target="_blank" rel="noreferrer" aria-label="Niko Karppisen LinkedIn-profiili (avautuu uudessa välilehdessä)">LinkedIn</a>
+      <a href="https://bsky.app/profile/lawlietnick.bsky.social" target="_blank" rel="noreferrer" aria-label="Niko Karppisen Bluesky-profiili (avautuu uudessa välilehdessä)">Bluesky</a>
+    </div>
+
+    ---
+
+    <div class="spotify-embeds">
+      <h2>Kuuntele podcast-vierailujani</h2>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/0tHszPbmKj7UVnMrscOsQy/video?utm_source=generator&theme=0" width="496" height="279" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/4Xd0GatdQM4a3fNSku2ljb?utm_source=generator&theme=0" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
     </div>
   </div>
 </body>
